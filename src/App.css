@@ -1,0 +1,15 @@
+.gridContainer {
+  display: grid;
+}
+
+.eventBorders {
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+}
+
+.eventMainBorder {
+  border-style: solid;
+  border-color: blue;
+  border-width: 4px;
+}
