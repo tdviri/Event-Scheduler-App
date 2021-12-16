@@ -2,9 +2,8 @@ const Navbar = () => {
   return (
     <nav>
       <div
-        className="links"
+        className="gridContainer"
         style={{
-          display: "grid",
           backgroundColor: "gray",
           textAlign: "left",
           width: "100vw",
