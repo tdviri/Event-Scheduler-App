@@ -6,8 +6,8 @@ const MeetingInfo = () => {
       className="gridContainer"
       style={{
         position: "relative",
-        height: "150px",
-        width: "300px",
+        height: "125px",
+        width: "275px",
         backgroundColor: "black",
         gridTemplateColumns: "repeat(2, 1fr)",
         gridTemplateRows: "repeat(2, 1fr)",
@@ -20,20 +20,24 @@ const MeetingInfo = () => {
         <span>Technical Review and Logistics Meeting</span>
         <span>Location: Address</span>
       </div>
-      <btn
-        className="eventBorders"
-        style={{
-          gridArea: "2 / 1 / 3 / 2",
-          position: "absolute",
-          backgroundColor: "green",
-          bottom: 0,
-          width: "30%",
-          height: "30%",
-          textAlign: "center",
-        }}
-      >
-        Register
-      </btn>
+      <a href="/Registration">
+        <button
+          type="button"
+          className="eventBorders"
+          cursor="pointer"
+          style={{
+            gridArea: "2 / 1 / 3 / 2",
+            position: "absolute",
+            backgroundColor: "green",
+            bottom: 0,
+            width: "30%",
+            height: "30%",
+            textAlign: "center",
+          }}
+        >
+          Register
+        </button>
+      </a>
     </div>
   );
 };

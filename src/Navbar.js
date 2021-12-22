@@ -1,3 +1,6 @@
+import { React } from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+
 const Navbar = () => {
   return (
     <nav>
@@ -12,7 +15,7 @@ const Navbar = () => {
         }}
       >
         <a
-          href="/"
+          href="/Home"
           style={{
             position: "absolute",
             left: "30px",
@@ -22,13 +25,13 @@ const Navbar = () => {
           Home
         </a>
         <a
-          href="/"
+          href="/Registration"
           style={{ position: "absolute", left: "120px", fontSize: "20px" }}
         >
           Registration
         </a>
         <a
-          href="/"
+          href="/ScheduleEvent"
           style={{ position: "absolute", left: "270px", fontSize: "20px" }}
         >
           Schedule Event
