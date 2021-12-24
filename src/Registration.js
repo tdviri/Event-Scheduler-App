@@ -20,14 +20,16 @@ const Registration = () => {
           gridRowGap: "150px",
           justifyContent: "left",
           alignItems: "center",
+          margin: "60px",
         }}
       >
         <MeetingInfo />
         <MeetingInfo />
         <MeetingInfo />
       </div>
-      <div
+      {/* <div
         id="registrationForm"
+        className="gridContainer"
         style={{
           position: "relative",
           height: "70vh",
@@ -35,16 +37,59 @@ const Registration = () => {
           right: "50px",
           top: "100px",
         }}
-      >
+      > */}
+      <div>
         <div style={{ position: "absolute", width: "100%", height: "20%" }}>
           Event Registration Form
         </div>
-        <form>
-          <label for="fname">First name:</label>
-          <input type="text" id="fname" name="fname"></input>
-          <label for="lname">Last name:</label>
-          <input type="text" id="lname" name="lname"></input>
-          <input type="submit" value="Submit"></input>
+        <form action="">
+          <div class="container">
+            <h1>Register</h1>
+            <p>Please fill in this form to create an account.</p>
+            <hr>
+              <label for="email">
+                <b>Email</b>
+              </label>
+              <input
+                type="text"
+                placeholder="Enter Email"
+                name="email"
+                id="email"
+                required
+              ></input>
+
+              <label for="psw">
+                <b>Password</b>
+              </label>
+              <input
+                type="password"
+                placeholder="Enter Password"
+                name="psw"
+                id="psw"
+                required
+              ></input>
+
+              <label for="psw-repeat">
+                <b>Repeat Password</b>
+              </label>
+              <input
+                type="password"
+                placeholder="Repeat Password"
+                name="psw-repeat"
+                id="psw-repeat"
+                required
+              ></input>
+            </hr>
+
+            <p>By creating an account you agree to our Terms Privacy</p>
+            <button type="submit" class="registerbtn">
+              Register
+            </button>
+          </div>
+
+          <div class="container signin">
+            <p>Already have an account? Sign in</p>
+          </div>
         </form>
       </div>
     </div>
