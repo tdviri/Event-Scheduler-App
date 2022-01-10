@@ -9,7 +9,12 @@ const MeetingInfo = () => {
         <span>Location: Address</span>
       </div>
       <a href="/Registration">
-        <button type="button" className="eventBorders" cursor="pointer">
+        <button
+          type="button"
+          className="eventBorders"
+          cursor="pointer"
+          style={{ backgroundColor: "green", color: "white" }}
+        >
           Register
         </button>
       </a>

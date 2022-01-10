@@ -1,43 +1,66 @@
 import "./App.css";
 import { useState, useEffect } from "react";
 import MeetingInfo from "./MeetingInfo";
+import { Container, Row, Col } from "react-bootstrap";
+
 function Home() {
   return (
-    <div>
-      <div>
-        <h1>Welcome</h1>
-      </div>
-      <h2>Upcoming Events</h2>
-      <div>
-        <div>
+    <Container>
+      <Row>
+        <Col
+          style={{
+            fontSize: "80px",
+            textAlign: "center",
+            backgroundColor: "gray",
+            width: "100vw",
+          }}
+        >
+          Welcome
+        </Col>
+      </Row>
+      <Row
+        style={{
+          fontSize: "35px",
+          textAlign: "center",
+          justifyContent: "center",
+        }}
+      >
+        Upcoming Events
+      </Row>
+      <Row style={{ marginTop: "40px" }}>
+        <Col>
           <MeetingInfo />
-        </div>
-        <div>
+        </Col>
+        <Col>
           <MeetingInfo />
-        </div>
-        <div>
+        </Col>
+        <Col>
           <MeetingInfo />
-        </div>
-        <div>
+        </Col>
+      </Row>
+      <Row style={{ marginTop: "60px" }}>
+        <Col>
           <MeetingInfo />
-        </div>
-        <div>
+        </Col>
+        <Col>
           <MeetingInfo />
-        </div>
-        <div>
+        </Col>
+        <Col>
           <MeetingInfo />
-        </div>
-        <div>
+        </Col>
+      </Row>
+      <Row style={{ marginTop: "60px" }}>
+        <Col>
           <MeetingInfo />
-        </div>
-        <div>
+        </Col>
+        <Col>
           <MeetingInfo />
-        </div>
-        <div>
+        </Col>
+        <Col>
           <MeetingInfo />
-        </div>
-      </div>
-    </div>
+        </Col>
+      </Row>
+    </Container>
   );
 }
 
