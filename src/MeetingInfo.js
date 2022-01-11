@@ -1,32 +1,22 @@
 import { React } from "react";
-import { Col, Row, Container } from "react-bootstrap";
 
 const MeetingInfo = () => {
   return (
-    <Container
+    <div
       className="gridContainer"
       style={{
         width: "300px",
-        position: "relative",
-        justifyContent: "space-evenly",
       }}
     >
-      <Col>
-        <Row
-          className="eventBorders"
-          style={{ position: "absolute", marginTop: "20px" }}
-        >
-          3:00 PM ET
-        </Row>
-        <Row>
+      <div>
+        <div className="eventBorders">3:00 PM ET</div>
+        <div>
           <a href="/Registration">
             <button
               type="button"
               className="eventBorders"
               cursor="pointer"
               style={{
-                position: "absolute",
-                marginBottom: "0px",
                 backgroundColor: "green",
                 color: "white",
               }}
@@ -34,25 +24,23 @@ const MeetingInfo = () => {
               Register
             </button>
           </a>
-        </Row>
-      </Col>
-      <Col
+        </div>
+      </div>
+      <div
         className="eventBorders"
         style={{
           width: "200px",
           height: "100px",
-          position: "absolute",
-          marginTop: "20px",
         }}
       >
-        <Row>
-          <span>Technical Review and Logistics Meeting</span>
-        </Row>
-        <Row>
-          <span>Location: Address</span>
-        </Row>
-      </Col>
-    </Container>
+        <div>
+          <div>Technical Review and Logistics Meeting</div>
+        </div>
+        <div>
+          <div>Location: Address</div>
+        </div>
+      </div>
+    </div>
   );
 };
 
