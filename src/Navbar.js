@@ -49,7 +49,7 @@ const Navbar = () => {
             marginLeft: "1000px",
           }}
         >
-          Admin
+          Message
         </a>
       </div>
     </nav>
