@@ -15,7 +15,7 @@ function Home() {
             width: "100vw",
           }}
         >
-          Welcome
+        Stony Brook University
         </Col>
       </Row>
       <Row
@@ -25,7 +25,7 @@ function Home() {
           justifyContent: "center",
         }}
       >
-        Upcoming Events
+        Flyers
       </Row>
       <Row style={{ marginTop: "40px" }}>
         <Col>
